@@ -1,0 +1,30 @@
+@use '../abstracts/variables' as v;
+
+html {
+    font-family: 'Manrope', sans-serif;
+    box-sizing: border-box;
+    font-size: 100%;
+    font-weight: v.$ultra_light;
+}
+
+*, 
+*::before, 
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    color: inherit;
+    &:visited {
+        color: inherit;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: v.$white;
+    color: v.$black;
+    font-weight: v.$ultra_light;
+
+}

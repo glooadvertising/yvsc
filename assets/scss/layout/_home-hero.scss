@@ -1,0 +1,46 @@
+@use '../abstracts/variables' as v;
+
+.home-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    color: v.$white;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+    img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        object-fit: cover;
+        object-position: center;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+    }
+    .container {
+        .white-trans-block {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: v.$white;
+            opacity: 0.9;
+            padding: 3rem;
+            font-size: 2vw;
+            max-width: 65%;
+            text-align: center;
+            margin: auto auto 0 auto;
+            p {
+                color: v.$blackberry;
+                opacity: 1;
+                margin-bottom: 0;
+            }
+        }
+    }
+}

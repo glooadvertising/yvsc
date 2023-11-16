@@ -1,0 +1,69 @@
+@use '../abstracts/variables' as v;
+
+.services-block {
+    background-color: v.$green;
+    color: v.$white;
+    display: flex;
+    flex-direction: row;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    gap: 4rem;
+    .container {
+        .col-left, .col-right {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;        
+        }
+
+        .col-left {
+            width: 50%;
+            img {
+                border-radius: 3rem;
+                aspect-ratio: 10/5;
+                object-fit: cover;
+                object-position: top;
+            }
+            @media screen and (max-width: 920px) {
+                width: 100%;
+            }
+
+        }
+        .col-right {
+            width: calc(50% - 4rem);
+            gap: 1rem;
+            p {
+                line-height: 1.5;
+            }
+            @media screen and (max-width: 920px) {
+                width: 100%;
+            }
+
+        }
+    
+    }
+
+    @media screen and (max-width: 920px) {
+        flex-direction: column;
+    }
+    
+    
+}
+
+.home-block-1 {
+    background-color: v.$blackberry;
+
+}
+.home-block-3 {
+    background-color: v.$green;
+    
+}
+.home-block-4 {
+    background-color: v.$orange;
+    flex-direction: row-reverse;
+    @media screen and (max-width: 920px) {
+        flex-direction: column;
+    }
+
+
+}

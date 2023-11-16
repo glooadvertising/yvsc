@@ -1,0 +1,117 @@
+@use '../abstracts/variables' as v;
+
+.main-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    .container {
+        .nav-wrapper {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            .menu {
+                ul {
+                    display: flex;
+                    flex-direction: row;   
+                    list-style-type: none;
+                    li {
+                        transition: v.$trans_one;
+                        &:hover, &:active, &.current_page_item {
+                            color: v.$purple;
+                        }
+                        a {
+                            padding: 1rem;
+                        }
+    
+                    }
+                }
+                @media screen and (max-width: 980px) {
+                    display: none;
+                }
+            }
+
+            .burger {
+                display: none;
+            }
+            @media screen and (max-width: 980px) {
+                .burger {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    position: relative;
+                    width: 2rem;
+                    height: 2rem;
+    
+                    .patty {
+                        display: flex;
+                        width: 100%;
+                        height: 2px;
+                        position: relative;
+                        background-color: v.$blackberry;
+                        transition: v.$trans_one;
+                    }
+    
+                }
+                .cross {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    position: relative;
+                    width: 2rem;
+                    height: 2rem;
+    
+                    .patty {
+                        display: flex;
+                        width: 100%;
+                        height: 2px;
+                        position: absolute;
+                        
+                    }
+    
+                    .patty:first-child {
+                        transform: rotate(45deg);
+                    }
+                    
+                    .patty:nth-child(2n) {
+                        display: none;
+                    }
+    
+                    .patty:last-child {
+                        transform: rotate(-45deg);
+                    }
+                }
+    
+                    
+            }
+
+            .ndis {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                gap: 0.5rem;
+                color: v.$ndis;
+                p {
+                    margin-bottom: 0;
+                    max-width: 12ch;
+                    font-weight: v.$semi_bold;
+                    font-size: 0.8rem;
+                    line-height: 1.1;
+                }
+                img {
+                    max-width: 70px;
+                }
+
+                @media screen and (max-width: 980px) {
+                    display: none;
+                }
+            }
+
+
+        }
+    }
+}

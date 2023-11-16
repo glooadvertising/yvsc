@@ -1,0 +1,27 @@
+@use '../abstracts/variables' as v;
+
+.btn {
+    display: flex;
+    flex-direction: row;
+    font-weight: v.$regular;
+    align-items: center;
+    text-transform: lowercase;
+    line-height: 1;
+    max-height: 3rem;
+    color: inherit;
+    border: 2px solid;
+    border-radius: 3rem;
+    padding: 1rem 3rem;
+}
+
+.btn-fwrd {
+    &::after {
+        content: 'Flecha aqui';
+        display: flex;
+        width: 1rem;
+        height: 1rem;
+        border-top: 2px solid v.$white;
+        border-right: 2px solid v.$white;
+
+    }
+}
