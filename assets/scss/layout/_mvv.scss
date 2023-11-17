@@ -1,0 +1,96 @@
+@use '../abstracts/variables' as v;
+
+.mvv {
+    display: flex;
+    flex-direction: column;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+    .container-full {
+        padding: 0;
+        @media screen and (max-width: 780px) {
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+        .row {
+            display: flex;
+            .grey-block-left{
+                background-color: rgb(220, 220, 220);
+                display: flex;
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+                width: calc(((100% - v.$page_width) / 2) + 2rem);
+                @media screen and (max-width: 1280px) {
+                    width: 4rem;
+                }
+            }
+            .grey-block-right{
+                background-color: rgb(220, 220, 220);
+                display: flex;
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+                width: calc(((100% - v.$page_width) / 2) + 2rem);
+                @media screen and (max-width: 1280px) {
+                    width: 4rem;
+                }
+            }
+            .centered-content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 30%;
+                padding: 3rem;
+                @media screen and (max-width: 1280px) {
+                    width: 50%;
+                }
+                @media screen and (max-width: 780px) {
+                    width: 100%;
+                }
+    
+            }
+            &:first-child {
+                justify-content: flex-start;
+                @media screen and (max-width: 780px) {
+                    align-items: flex-end;
+                }
+                img {
+                    width: 260px;
+                    object-fit: cover;
+                    object-position: center;
+        
+            }
+            }
+            &:last-child {
+                justify-content: flex-end;
+                img {
+                    width: 260px;
+                    object-fit: cover;
+                    object-position: center;
+                    // margin-left: 40%;
+                }
+            }
+            @media screen and (max-width: 780px) {
+                flex-direction: column;
+            }
+
+
+        }
+
+    }
+}
+
+.mission {
+    background-color: v.$orange;
+    color: v.$white;
+}
+.vision {
+    background-color: v.$blue;
+    color: v.$white;
+    margin: auto;
+}
+.values {
+    background-color: v.$purple;
+    color: v.$white;;
+}
