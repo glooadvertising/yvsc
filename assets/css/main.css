@@ -508,4 +508,27 @@ img {
 .values {
   background-color: #B501DB;
   color: #ffffff;
+}
+
+.page-hero {
+  display: flex;
+  background-color: red;
+}
+.page-hero .bg-figures {
+  display: flex;
+  flex-direction: row;
+  align-items: space-between;
+  justify-content: space-between;
+}
+.page-hero .bg-figures .left-figure {
+  display: flex;
+  background-color: yellow;
+  width: 100px;
+  height: 300px;
+}
+.page-hero .bg-figures .right-figure {
+  display: flex;
+  background-color: blue;
+  width: 100px;
+  height: 300px;
 }/*# sourceMappingURL=main.css.map */

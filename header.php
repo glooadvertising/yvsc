@@ -26,4 +26,8 @@
             </span>
         </div>
     </header>
-    <?php get_template_part( 'partials/home-hero' ); ?>
+   <?php if(is_page('home')) { ?>
+        <?php get_template_part( 'partials/home-hero' ); ?>
+    <?php } else { ?>
+        <?php get_template_part( 'partials/page-hero' ); ?>
+    <?php } ?>
