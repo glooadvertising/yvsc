@@ -14,6 +14,9 @@
             align-items: center;
             justify-content: space-between;
             gap: 2rem;
+            @media screen and (max-width: 1024px) {
+                gap: 1rem;
+            }
             .menu {
                 ul {
                     display: flex;
@@ -26,6 +29,9 @@
                         }
                         a {
                             padding: 1rem;
+                            @media screen and (max-width: 1024px) {
+                                padding: 1rem 0.5rem;
+                            }
                         }
     
                     }

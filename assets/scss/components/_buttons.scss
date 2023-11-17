@@ -12,16 +12,20 @@
     border: 2px solid;
     border-radius: 3rem;
     padding: 1rem 3rem;
+    gap: 2rem;
 }
 
-.btn-fwrd {
+.btn-fwd {
+    padding-right: 2rem;
     &::after {
-        content: 'Flecha aqui';
+        content: '';
+        background-image: url('../../assets/images/arrow-right.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
         display: flex;
-        width: 1rem;
-        height: 1rem;
-        border-top: 2px solid v.$white;
-        border-right: 2px solid v.$white;
+        width: 2rem;
+        height: 2rem;
 
     }
 }
