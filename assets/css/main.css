@@ -404,6 +404,7 @@ img {
 }
 .mvv .container-full .row:first-child {
   justify-content: flex-start;
+  z-index: 1;
 }
 @media screen and (max-width: 780px) {
   .mvv .container-full .row:first-child {
@@ -416,6 +417,13 @@ img {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+  margin-top: 2rem;
+  margin-bottom: -2rem;
+}
+@media screen and (max-width: 780px) {
+  .mvv .container-full .row:first-child img {
+    margin-top: -2rem;
+  }
 }
 .mvv .container-full .row:last-child {
   justify-content: flex-end;
@@ -426,6 +434,14 @@ img {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+  margin-top: -2rem;
+  margin-bottom: 2rem;
+}
+@media screen and (max-width: 780px) {
+  .mvv .container-full .row:last-child img {
+    margin-bottom: -2rem;
+    z-index: 1;
+  }
 }
 @media screen and (max-width: 780px) {
   .mvv .container-full .row {

@@ -52,6 +52,7 @@
             }
             &:first-child {
                 justify-content: flex-start;
+                z-index: 1;
                 @media screen and (max-width: 780px) {
                     align-items: flex-end;
                 }
@@ -59,6 +60,11 @@
                     width: 260px;
                     object-fit: cover;
                     object-position: center;
+                    margin-top: 2rem;
+                    margin-bottom: -2rem;
+                    @media screen and (max-width: 780px) {
+                        margin-top: -2rem;
+                    }
         
             }
             }
@@ -68,7 +74,12 @@
                     width: 260px;
                     object-fit: cover;
                     object-position: center;
-                    // margin-left: 40%;
+                    margin-top: -2rem;
+                    margin-bottom: 2rem;
+                    @media screen and (max-width: 780px) {
+                        margin-bottom: -2rem;
+                        z-index: 1;
+                    }
                 }
             }
             @media screen and (max-width: 780px) {
