@@ -6,6 +6,13 @@
     padding: 0 2rem;
     margin: auto;
 }
+.container-narrow {
+    all: inherit;
+    width: v.$blog_width;
+    max-width: 100%;
+    padding: 0 2rem;
+    margin: auto;
+}
 .container-full {
     all: inherit;
     width: 100%;
@@ -16,6 +23,7 @@
 
 img {
     max-width: 100%;
+    object-fit: cover;
 }
 
 .round {

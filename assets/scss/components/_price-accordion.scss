@@ -1,0 +1,114 @@
+@use '../abstracts/variables' as v;
+
+.price-accordion {
+    background-color: v.$grey_b;
+    display: flex;
+    width: 100%;
+    padding: 2rem 3rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out all;
+    
+
+    summary {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 2rem;
+        font-weight: v.$bold;
+        width: 100%;
+        transition: 0.3s ease-out all;
+        // &::after {
+        //     content: 'view';
+            
+        // }
+
+        span {
+            font-size: 1rem;
+            font-weight: v.$light;
+        }
+
+        span:first-child {
+            display: flex;
+
+        }
+        span:last-child {
+            display: none;
+        }
+
+    }
+    
+    p {
+        margin-top: 2rem;
+    }
+
+    table {
+        width: 100%;
+        border-spacing: 0;
+        font-weight: v.$bold;
+        font-size: 0.8rem;
+        thead {
+            background-color: v.$blue;
+            color: v.$white;
+            tr {
+                td {
+                    padding: 0.25rem 0.5rem;
+                    border-bottom: 1px solid v.$white;
+                }
+
+            }
+        }
+
+        tbody {
+            tr {
+                &:nth-child(odd) {
+                    border: 1px solid v.$white;
+                    background-color: v.$blue_pale;
+                    td {
+                        padding: 0.25rem 0.5rem;
+                        &:nth-child(-n+3) {
+                            border-right: 1px solid v.$white;
+                        }
+                        
+                    }
+                }
+                &:nth-child(even) {
+                    border: 1px solid v.$blue_pale;
+                    td {
+                        padding: 0.25rem 0.5rem;
+                        &:nth-child(-n+3) {
+                            border-right: 1px solid v.$blue_pale;
+                        }
+                        &:first-child {
+                            border-left: 1px solid v.$blue_pale;
+                        }
+                        &:last-child {
+                            border-right: 1px solid v.$blue_pale;
+                        }
+                    }
+                }
+                &:last-child {
+                    td {
+                        border-bottom: 1px solid v.$blue_pale;
+                    }
+                    
+                }
+                
+                
+
+            }
+        }
+    }
+}
+
+.price-accordion[open] {
+    transition: 0.3s ease-in-out all;
+    summary{
+        span:first-child {
+            display: none;
+        }
+        span:last-child {
+            display: flex;
+        }
+
+    }
+}

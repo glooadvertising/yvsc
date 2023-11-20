@@ -1,23 +1,133 @@
+@use '../abstracts/variables' as v;
+
 .page-hero {
     display: flex;
-    background-color: red;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 300px;
+
+    @media screen and (max-width: 980px) {
+        flex-direction: column-reverse;
+    }
+
     .bg-figures {
         display: flex;
         flex-direction: row;
-        align-items: space-between;
+        align-items: center;
         justify-content: space-between;
+        position: absolute;
+        width: 100%;
+        height: 100%;
         .left-figure {
             display: flex;
-            background-color: yellow;
-            width: 100px;
-            height: 300px;
+            // background: v.$gradient_vert_ab;
+            width: calc((100% - v.$page_width) / 2);
+            height: 100%;
+            border-top-right-radius: 4rem;
+            border-bottom-right-radius: 4rem;
+            @media screen and (max-width: 980px) {
+                display: none;
+            }
+        
         }
         .right-figure {
             display: flex;
-            background-color: blue;
-            width: 100px;
-            height: 300px;
+            background: v.$gradient_vert_ab;
+            width: 33%;
+            height: 100%;
+            border-top-left-radius: 4rem;
+            border-bottom-left-radius: 4rem;
+            @media screen and (max-width: 980px) {
+                display: none;
+            }
+        
         }
 
     }
+    .container-narrow {
+        gap: 6rem;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-top: 2rem;
+        margin-bottom: -2rem;
+        @media screen and (max-width: 980px) {
+            gap: 0;
+            margin: 0;
+            padding-right: 0;
+        }
+        .col-left {
+            width:40%;
+            @media screen and (max-width: 980px) {
+                background: v.$gradient_vert_ab;
+                padding: 4rem 2rem;
+                border-top-left-radius: 4rem;
+                border-bottom-left-radius: 4rem;
+                width: 100%;
+
+            }
+            h1 {
+                font-size: 2.5rem;
+                margin-block-end: 1rem;;
+            }
+        
+        }
+        .col-right {
+            width: 40%;
+            img {
+                aspect-ratio: 6/5;
+                
+            }
+            @media screen and (max-width: 980px) {
+                width: 50%;
+                margin-bottom: -1rem;
+                z-index: 1;
+            }
+            @media screen and (max-width: 720px) {
+                width: 60%;
+            }
+            @media screen and (max-width: 580px) {
+                width: calc(100% - 2rem)
+                
+            }
+        }
+    }
 }
+
+.about-page {
+    .left-figure {
+        background-color: v.$purple;
+    }
+    h1 {
+        color: v.$purple;
+    }
+}
+.services-page {
+    .left-figure {
+        background-color: v.$orange;
+    }
+    h1 {
+        color: v.$orange;
+    }
+}
+
+.team-page {
+    .left-figure {
+        background-color: v.$green;
+    }
+    h1 {
+        color: v.$green;
+    }
+}
+
+.price-page {
+    .left-figure {
+        background-color: v.$blue;
+    }
+    h1 {
+        color: v.$blue;
+    }
+}
+
+

@@ -2,8 +2,8 @@
 
 // COLOURS
 $blue: #0264D2;
-$blue_pale: #5E98D8;
-$purple: #B501DB;
+$blue_pale: #c1d5eb;
+$purple: #81298F;
 $purple_pale: #E199F1;
 $orange: #FF8515;
 $orange_pale: #FFBB7D;
@@ -13,6 +13,13 @@ $white: #ffffff;
 $black: #000000;
 $blackberry: #363053;
 $ndis: #6B2B75;
+$grey_a: #F7F7F7;
+$grey_b: #F6F6F6;
+
+// GRADIENTS
+
+$gradient_vert_ab: linear-gradient(180deg, $grey_b 0%, $grey_a 100%);
+
 
 // FONTS
 $ultra_light: 200;
@@ -26,6 +33,7 @@ $heavy: 800;
 // SIZES
 
 $page_width: 1440px;
+$blog_width: 1280px;
 
 
 // TRANSITIONS
