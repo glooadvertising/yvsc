@@ -13,7 +13,7 @@
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="Yarra Valley Support Coordination Logo">
             </a>
             <span class="nav-wrapper">
-                <?php wp_nav_menu(); ?>
+                <?php wp_nav_menu(array('menu' => 'Main Menu')); ?>
                 <div id="menu-button" class="burger">
                     <div class="patty"></div>
                     <div class="patty"></div>

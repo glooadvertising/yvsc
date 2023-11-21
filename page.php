@@ -21,8 +21,10 @@
             <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="" class="round">
         </div>
         <?php } ?>
+</section>
 
-
+<section class="dir-col">
+    <div class="container-narrow">
         <?php if(is_page('price-guide')){ ?>
             <details class="price-accordion round">
                 <summary>Centre Capital Costs <span>View</span><span>Hide</span></summary>
@@ -51,10 +53,37 @@
                         </tr>
                     </tbody>
                 </table>
-
             </details>
-
         <?php }?>
+    </div>
+</section>
+
+
+<section class="dir-col">
+    <div class="container-narrow">
+        <!-- RESOURCES -->
+
+        <?php
+            $args = array(
+                'post_parent' => $post->ID,
+                'post_type' => 'page',
+                'orderby' => 'menu_order'
+            );
+
+            $child_query = new WP_Query( $args );
+        ?>
+
+            <?php if(is_page('resources')){ ?>
+            <?php while ( $child_query->have_posts() ) : $child_query->the_post(); ?>
+                <details class="price-accordion round">
+                    <summary><?php the_title(); ?> <span>View</span><span>Hide</span></summary>
+                    <?php the_content(); ?>
+
+                </details>
+            <?php endwhile; ?>
+            <?php wp_reset_postdata(); ?>
+            <?php } ?>
+
     </div>
 </section>
 

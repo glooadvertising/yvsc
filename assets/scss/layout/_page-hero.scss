@@ -112,6 +112,15 @@
     }
 }
 
+.price-page {
+    .left-figure {
+        background-color: v.$blue;
+    }
+    h1 {
+        color: v.$blue;
+    }
+}
+
 .team-page {
     .left-figure {
         background-color: v.$green;
@@ -121,12 +130,12 @@
     }
 }
 
-.price-page {
+.resources-page {
     .left-figure {
-        background-color: v.$blue;
+        background-color: v.$purple;
     }
     h1 {
-        color: v.$blue;
+        color: v.$purple;
     }
 }
 

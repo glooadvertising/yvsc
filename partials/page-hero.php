@@ -76,3 +76,50 @@
 
 
 <?php } ?>
+
+
+
+<?php if(is_page('our-team')) { ?>
+
+
+<section class="page-hero team-page">
+    <div class="bg-figures">
+        <div class="left-figure team-page"></div>
+        <div class="right-figure"></div>
+    </div>
+    <div class="container-narrow">
+        <div class="col-left">
+            <h1><?php the_title();?></h1>
+            <?php the_excerpt(); ?>
+        </div>
+        <div class="col-right">
+            <img src="<?php echo the_post_thumbnail_url( ); ?>" alt="" class="round">
+        </div>
+    </div>
+</section>
+
+
+<?php } ?>
+
+
+<?php if(is_page('resources')) { ?>
+
+
+<section class="page-hero resources-page">
+    <div class="bg-figures">
+        <div class="left-figure resources-page"></div>
+        <div class="right-figure"></div>
+    </div>
+    <div class="container-narrow">
+        <div class="col-left">
+            <h1><?php the_title();?></h1>
+            <?php the_excerpt(); ?>
+        </div>
+        <div class="col-right">
+            <img src="<?php echo the_post_thumbnail_url( ); ?>" alt="" class="round">
+        </div>
+    </div>
+</section>
+
+
+<?php } ?>

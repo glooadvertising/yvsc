@@ -14,4 +14,5 @@ function add_theme_scripts_and_stylesheets() {
 add_action( 'wp_enqueue_scripts', 'add_theme_scripts_and_stylesheets' );
 
 add_theme_support( 'post-thumbnails' ); 
+add_theme_support( 'menus' );
 add_post_type_support( 'page', 'excerpt' );

@@ -77,6 +77,15 @@ img {
   border-radius: 4rem;
 }
 
+.dir-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  width: 100%;
+  gap: 1rem;
+}
+
 .btn {
   display: flex;
   flex-direction: row;
@@ -296,27 +305,27 @@ img {
     gap: 1rem;
   }
 }
-.main-header .container .nav-wrapper .menu ul {
+.main-header .container .nav-wrapper .menu-main-menu-container ul {
   display: flex;
   flex-direction: row;
   list-style-type: none;
 }
-.main-header .container .nav-wrapper .menu ul li {
+.main-header .container .nav-wrapper .menu-main-menu-container ul li {
   transition: 0.3s ease-out all;
 }
-.main-header .container .nav-wrapper .menu ul li:hover, .main-header .container .nav-wrapper .menu ul li:active, .main-header .container .nav-wrapper .menu ul li.current_page_item {
+.main-header .container .nav-wrapper .menu-main-menu-container ul li:hover, .main-header .container .nav-wrapper .menu-main-menu-container ul li:active, .main-header .container .nav-wrapper .menu-main-menu-container ul li.current_page_item {
   color: #81298F;
 }
-.main-header .container .nav-wrapper .menu ul li a {
+.main-header .container .nav-wrapper .menu-main-menu-container ul li a {
   padding: 1rem;
 }
 @media screen and (max-width: 1024px) {
-  .main-header .container .nav-wrapper .menu ul li a {
+  .main-header .container .nav-wrapper .menu-main-menu-container ul li a {
     padding: 1rem 0.5rem;
   }
 }
 @media screen and (max-width: 980px) {
-  .main-header .container .nav-wrapper .menu {
+  .main-header .container .nav-wrapper .menu-main-menu-container {
     display: none;
   }
 }
@@ -738,6 +747,13 @@ img {
   color: #FF8515;
 }
 
+.price-page .left-figure {
+  background-color: #0264D2;
+}
+.price-page h1 {
+  color: #0264D2;
+}
+
 .team-page .left-figure {
   background-color: #AED234;
 }
@@ -745,11 +761,11 @@ img {
   color: #AED234;
 }
 
-.price-page .left-figure {
-  background-color: #0264D2;
+.resources-page .left-figure {
+  background-color: #81298F;
 }
-.price-page h1 {
-  color: #0264D2;
+.resources-page h1 {
+  color: #81298F;
 }
 
 .standard-page-main {
