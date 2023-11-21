@@ -35,7 +35,7 @@
                 <h2>Mission</h2>
                 <p>To work with and alongside people to support them to fulfil their goals to enjoy their life. We are driven with a person-centred passion to contribute and make a difference in issues that matter to the community, both individually and collectively.</p>
             </div>
-            <img src="http://yvsc.test/wp-content/uploads/2023/11/stock-photo-down-syndrome-man-attending-education-class-in-community-center-inclusivity-of-disabled-person-1974822152.jpg" alt="Mission" class="round">
+            <img src="<?php echo site_url(); ?>/wp-content/uploads/2023/11/stock-photo-down-syndrome-man-attending-education-class-in-community-center-inclusivity-of-disabled-person-1974822152.jpg" alt="Mission" class="round">
         </div>
         <div class="row">
             <div class="centered-content vision round">
@@ -44,7 +44,7 @@
             </div>
         </div>
         <div class="row">
-            <img src="http://yvsc.test/wp-content/uploads/2023/11/stock-photo-portrait-of-happy-women-with-disability-on-spring-lawn-375512857.jpg" alt="Mission" class="round">
+            <img src="<?php echo site_url(); ?>/wp-content/uploads/2023/11/stock-photo-portrait-of-happy-women-with-disability-on-spring-lawn-375512857.jpg" alt="Mission" class="round">
             <div class="centered-content values round">
                 <h2>Values</h2>
                 <p>To work with and alongside people to support them to fulfil their goals to enjoy their life. We are driven with a person-centred passion to contribute and make a difference in issues that matter to the community, both individually and collectively.</p>
