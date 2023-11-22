@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
     color: v.$white;
-    padding-top: 3rem;
+    padding-top: 4rem;
     padding-bottom: 3rem;
     gap: 4rem;
     .container {
@@ -14,16 +14,65 @@
             flex-direction: row;
             align-items: flex-start;
             justify-content: space-between;
-            gap: 4rem;
+            gap: 6rem;
             .col-left {
                 gap: 4rem;
                 display: flex;
                 flex-direction: row;
                 align-items: flex-start;
+                min-width: 40%;
                 @media screen and (max-width: 980px) {
                     flex-direction: column;
+                    min-width: 50%;
+                }
+                @media screen and (max-width: 480px) {
+                    min-width: 100%;
                 }
     
+            }
+            .col-right {
+                min-width: 20%;
+                @media screen and (max-width: 980px) {
+                    min-width: 50%;
+                }
+                @media screen and (max-width: 480px) {
+                    min-width: 100%;
+                }
+            }
+            .col-center {
+                display: flex;
+                flex-grow: 1;
+                .menu-main-menu-container {
+                    width: 100%;
+
+                    .menu{
+                        list-style-type: none;
+                        margin-block-start: 0;
+                        margin-block-end: 0;
+                        padding-inline-start: 0;
+                        li a {
+                            display: flex;
+                            padding-bottom: 0.5rem;
+                            padding-right: 3rem;
+                            border-bottom: 1px dotted v.$purple;
+                            margin-bottom: 0.5rem;
+                            transition: v.$trans_one;
+                            &:hover {
+                                padding-left: 0.5rem;
+                            }
+                        }
+                        li:last-child a {
+                            border: none;
+                        }
+                    }
+    
+                }
+                @media screen and (max-width: 980px) {
+                    min-width: 50%;
+                }
+                @media screen and (max-width: 480px) {
+                    min-width: 100%;
+                }
             }
 
             @media screen and (max-width: 980px) {
@@ -35,6 +84,12 @@
             flex-direction: row;
             align-items: center;
             justify-content: center;
+        }
+        a {
+            transition: v.$trans_one;
+        }
+        a:hover {
+            color: v.$orange;
         }
     }
 }

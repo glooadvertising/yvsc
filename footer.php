@@ -27,6 +27,9 @@
                         </a>
                     </div>
                 </div>
+                <div class="col-center">
+                    <?php wp_nav_menu(); ?>
+                </div>
             </div>
             <div class="bottom-row">
                 <p>Copyright <?php echo date('Y'); ?> <?php bloginfo('title'); ?> | Site by <a href="https://glooadvertising.com.au" target="_blank" rel="noopener noreferrer" > Gloo</a></p>

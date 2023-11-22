@@ -12,7 +12,7 @@
             <span>
                 <?php the_content(); ?>
             </span>
-            <a href="#" class="btn btn-fwd">
+            <a href="<?php echo site_url(); ?>/services" class="btn btn-fwd">
             
                 <?php the_title(); ?>
             </a>
@@ -92,7 +92,7 @@
                 <h2><?php the_title(); ?></h2>
                 <?php the_content(); ?>
             </span>
-            <a href="#" class="btn btn-fwd">
+            <a href="<?php echo site_url(); ?>/services" class="btn btn-fwd">
                 View our services
             </a>
         </div>

@@ -52,10 +52,17 @@
 
 .home-block-1 {
     background-color: v.$blackberry;
+    .btn-fwd:hover {
+        background-color: v.$purple;
+    }
 
 }
 .home-block-3 {
     background-color: v.$green;
+    .btn-fwd:hover {
+        background-color: v.$green_pale;
+    }
+
     
 }
 .home-block-4 {
@@ -64,6 +71,10 @@
     @media screen and (max-width: 920px) {
         flex-direction: column;
     }
+    .btn-fwd:hover {
+        background-color: v.$orange_pale;
+    }
+
 
 
 }
