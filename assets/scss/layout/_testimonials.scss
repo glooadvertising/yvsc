@@ -1,0 +1,37 @@
+@use '../abstracts/variables' as v;
+
+.testimonials-section {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    background-color: v.$grey_b;
+    .testimonial-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        min-height: 200px;
+        margin-top: 4rem;
+        margin-bottom: 6rem;
+        @media screen and (max-width: 720px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .testimonial-card {
+            background-color: v.$white;
+            padding: 3rem;
+        }
+    }
+}
+.block-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: v.$green;
+    color: v.$white;
+    padding: 2rem;
+    h2 {
+        margin-bottom: 0;
+    }
+}
+
+

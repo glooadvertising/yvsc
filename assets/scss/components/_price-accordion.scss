@@ -7,6 +7,9 @@
     padding: 2rem 3rem;
     cursor: pointer;
     transition: 0.3s ease-in-out all;
+    &:last-child {
+        margin-bottom: 4rem;
+    }
     
 
     summary {

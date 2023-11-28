@@ -8,9 +8,7 @@
                     </a>
                     <div class="contact-method">
                         <h3><?php bloginfo( 'title' ); ?></h3>
-                        <p>Specialist Support Coordination<br> Registered NDIS Provider.Provider No: 4050110593
-
-</p>
+                        <p>Specialist Support Coordination<br> Registered NDIS Provider.Provider No: 4050110593</p>
                     </div>
                 </div>
                 <div class="col-right">

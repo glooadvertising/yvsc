@@ -9,7 +9,7 @@ html {
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 a {
@@ -87,6 +87,19 @@ img {
   gap: 1rem;
   padding-top: 6rem;
   padding-bottom: 6rem;
+}
+
+.grey-box {
+  background-color: #F6F6F6;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+  margin-top: 4rem;
+  width: 100%;
+}
+
+.margin-top-thick {
+  margin-top: 4rem;
 }
 
 .btn {
@@ -223,6 +236,9 @@ img {
   cursor: pointer;
   transition: 0.3s ease-in-out all;
 }
+.price-accordion:last-child {
+  margin-bottom: 4rem;
+}
 .price-accordion summary {
   display: flex;
   align-items: center;
@@ -335,6 +351,41 @@ img {
 }
 .services-grid .service-card:nth-child(4n+4) {
   border: 0.5rem solid #0264D2;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 4rem;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+}
+.team-grid .team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(180deg, #F6F6F6 0%, #F7F7F7 100%);
+}
+.team-grid .team-member .headshot {
+  display: flex;
+  flex-direction: column;
+}
+.team-grid .team-member .headshot img {
+  display: flex;
+  aspect-ratio: 1/1;
+  -o-object-fit: contain;
+     object-fit: contain;
+  background-color: white;
+  border-radius: 50%;
+  border: 0.5rem solid #AED234;
+  width: 160px;
+}
+.team-grid .team-member .name {
+  font-weight: 600;
+  font-size: 1.2rem;
 }
 
 .main-header {
@@ -939,4 +990,45 @@ img {
   box-shadow: 2rem -2rem 0 #81298F;
   margin: 2rem 2rem 0 0;
   width: calc(100% - 2rem);
+}
+
+.services .col-right img {
+  box-shadow: 2rem -2rem 0 #FF8515 !important;
+}
+
+.testimonials-section {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  background-color: #F6F6F6;
+}
+.testimonials-section .testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  min-height: 200px;
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+}
+@media screen and (max-width: 720px) {
+  .testimonials-section .testimonial-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.testimonials-section .testimonial-grid .testimonial-card {
+  background-color: #ffffff;
+  padding: 3rem;
+}
+
+.block-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #AED234;
+  color: #ffffff;
+  padding: 2rem;
+}
+.block-title h2 {
+  margin-bottom: 0;
 }/*# sourceMappingURL=main.css.map */

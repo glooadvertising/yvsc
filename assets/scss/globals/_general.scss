@@ -40,3 +40,17 @@ img {
     padding-top: 6rem;
     padding-bottom: 6rem;
 }
+
+.grey-box {
+    background-color: v.$grey_b;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    margin-top: 4rem;
+    width: 100%;
+
+}
+
+.margin-top-thick {
+    margin-top: 4rem;
+}
