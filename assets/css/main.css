@@ -261,6 +261,9 @@ img {
 .price-accordion p {
   margin-top: 2rem;
 }
+.price-accordion a {
+  text-decoration: underline;
+}
 .price-accordion table {
   width: 100%;
   border-spacing: 0;

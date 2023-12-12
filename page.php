@@ -121,100 +121,22 @@
 <?php if(is_page('price-guide')){ ?>
 <section class="dir-col">
     <div class="container-narrow">
-    <details class="price-accordion round">
-        <summary>Centre Capital Costs <span>View</span><span>Hide</span></summary>
-        <p>Claiming for establishment fees for personal care/participation supports</p>
-        <table>
-            <thead>
-                <tr>
-                    <td>Item number</td>
-                    <td>Item name and notes</td>
-                    <td>Unit</td>
-                    <td>National</td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>01_049_0107_1_1</td>
-                    <td>Establishment fee for personal care/participation</td>
-                    <td>Each</td>
-                    <td>$654.70</td>
-                </tr>
-                <tr>
-                    <td>01_049_0125_1_1</td>
-                    <td>Establishment fee for personal care/participation</td>
-                    <td>Each</td>
-                    <td>$654.70</td>
-                </tr>
-            </tbody>
-        </table>
-    </details>
-    <details class="price-accordion round">
-        <summary>Core assistance with daily Life <span>View</span><span>Hide</span></summary>
-        <p>Assitance with self care activities</p>
-        <table>
-            <thead>
-                <tr>
-                    <td><strong>Item Number</strong></td>
-                    <td><strong>Item Name and Notes</strong></td>
-                    <td><strong>Unit</strong></td>
-                    <td><strong>National</strong></td>
-                    <td><strong>Remote</strong></td>
-                    <td><strong>Very Remote</strong></td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>01_011_0107_1_1_T</td>
-                    <td>Assistance With Self-Care Activities - Standard - Weekday Daytime - TTP</td>
-                    <td>Hour</td>
-                    <td>$66.45</td>
-                    <td>$93.03</td>
-                    <td>$99.68</td>
-                </tr>
-                <tr>
-                    <td>01_015_0107_1_1_T</td>
-                    <td>Assistance With Self-Care Activities - Standard - Weekday Evening - TTP</td>
-                    <td>Hour</td>
-                    <td>$73.21</td>
-                    <td>$102.49</td>
-                    <td>$109.82</td>
-                </tr>
-                <tr>
-                    <td>01_002_0107_1_1_T</td>
-                    <td>Assistance With Self-Care Activities - Standard - Weekday Night - TTP</td>
-                    <td>Hour</td>
-                    <td>$74.56</td>
-                    <td>$104.38</td>
-                    <td>$111.84</td>
-                </tr>
-                <tr>
-                    <td>01_013_0107_1_1_T</td>
-                    <td>Assistance With Self-Care Activities - Standard - Saturday - TTP</td>
-                    <td>Hour</td>
-                    <td>$93.50</td>
-                    <td>$130.90</td>
-                    <td>$140.25</td>
-                </tr>
-                <tr>
-                    <td>01_014_0107_1_1_T</td>
-                    <td>Assistance With Self-Care Activities - Standard - Sunday - TTP</td>
-                    <td>Hour</td>
-                    <td>$120.56</td>
-                    <td>$168.78</td>
-                    <td>$180.84</td>
-                </tr>
-                <tr>
-                    <td>01_012_0107_1_1_T</td>
-                    <td>Assistance With Self-Care Activities - Standard - Public Holiday - TTP</td>
-                    <td>Hour</td>
-                    <td>$147.62</td>
-                    <td>$206.67</td>
-                    <td>$221.43</td>
-                </tr>
-            </tbody>
-        </table>
-    </details>
+        <?php
+            $args = array(
+                'post_parent' => $post->ID,
+                'post_type' => 'page',
+                'orderby' => 'menu_order'
+            );
+
+            $child_query = new WP_Query( $args );
+        ?>
+
+        <?php while ( $child_query->have_posts() ) : $child_query->the_post(); ?>
+            <?php get_template_part( 'partials/prices' );?>
+        <?php endwhile; ?>
+        <?php wp_reset_postdata(); ?>
+
+        
 
     <span class="margin-top-thick">
         <?php the_content(); ?>
