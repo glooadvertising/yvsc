@@ -315,6 +315,11 @@ Button, .btn {
   padding: 0.25rem 0.5rem;
   border-bottom: 1px solid #ffffff;
 }
+@media screen and (max-width: 580px) {
+  .price-accordion table thead tr td {
+    overflow-x: scroll;
+  }
+}
 .price-accordion table tbody tr:nth-child(odd) {
   border: 1px solid #ffffff;
   background-color: #c1d5eb;
