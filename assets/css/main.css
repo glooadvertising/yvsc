@@ -101,6 +101,11 @@ img {
   margin-top: 4rem;
   width: 100%;
 }
+@media screen and (max-width: 580px) {
+  .grey-box {
+    padding-inline: 2rem;
+  }
+}
 
 .margin-top-thick {
   margin-top: 4rem;
@@ -245,6 +250,11 @@ Button, .btn {
 .price-accordion:last-child {
   margin-bottom: 4rem;
 }
+@media screen and (max-width: 780px) {
+  .price-accordion {
+    padding: 2rem 2rem;
+  }
+}
 .price-accordion summary {
   display: flex;
   align-items: center;
@@ -253,6 +263,16 @@ Button, .btn {
   font-weight: 600;
   width: 100%;
   transition: 0.3s ease-out all;
+}
+@media screen and (max-width: 720px) {
+  .price-accordion summary {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 580px) {
+  .price-accordion summary {
+    font-size: 1rem;
+  }
 }
 .price-accordion summary span {
   font-size: 1rem;
@@ -275,6 +295,11 @@ Button, .btn {
   border-spacing: 0;
   font-weight: 600;
   font-size: 0.8rem;
+}
+@media screen and (max-width: 820px) {
+  .price-accordion table {
+    font-size: 0.6rem;
+  }
 }
 .price-accordion table thead {
   background-color: #0264D2;
@@ -329,6 +354,26 @@ Button, .btn {
   gap: 1rem;
   margin-bottom: 4rem;
 }
+@media screen and (max-width: 1280px) {
+  .services-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (max-width: 980px) {
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 720px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 480px) {
+  .services-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 .services-grid .service-card {
   display: flex;
   flex-direction: column;
@@ -363,11 +408,27 @@ Button, .btn {
 }
 
 .team-grid {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   row-gap: 4rem;
   -moz-column-gap: 2rem;
        column-gap: 2rem;
+}
+@media screen and (max-width: 1280px) {
+  .team-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 980px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 720px) {
+  .team-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 .team-grid .team-member {
   display: flex;
@@ -377,6 +438,7 @@ Button, .btn {
   text-align: center;
   padding: 2rem;
   background: linear-gradient(180deg, #F6F6F6 0%, #F7F7F7 100%);
+  width: 100%;
 }
 .team-grid .team-member .headshot {
   display: flex;
