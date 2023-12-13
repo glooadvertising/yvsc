@@ -1,7 +1,8 @@
     <?php wp_footer();?>
     <section class="contact-form">
         <div class="container">
-            <?php do_shortcode( '[fluentform id="1"]' )?>
+            <h2>Contact us</h2>
+            <?php echo do_shortcode( '[fluentform id="3"]' ); ?>
         </div>
     </section>
     <footer class="main-footer">

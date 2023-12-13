@@ -1,6 +1,8 @@
 @use '../abstracts/variables' as v;
 
-.btn {
+Button, .btn {
+    background-color: unset;
+    font-size: unset;
     display: flex;
     flex-direction: row;
     font-weight: v.$regular;

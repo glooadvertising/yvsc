@@ -102,7 +102,9 @@ img {
   margin-top: 4rem;
 }
 
-.btn {
+Button, .btn {
+  background-color: unset;
+  font-size: unset;
   display: flex;
   flex-direction: row;
   font-weight: 400;
@@ -501,6 +503,27 @@ img {
   .main-header .container .nav-wrapper .ndis {
     display: none;
   }
+}
+
+.contact-form {
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+}
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  border: 1px solid #363053;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+  color: #363053;
+}
+.contact-form input::-moz-placeholder, .contact-form textarea::-moz-placeholder {
+  color: #363053;
+}
+.contact-form input::placeholder, .contact-form textarea::placeholder {
+  color: #363053;
 }
 
 .main-footer {

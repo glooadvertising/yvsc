@@ -1,5 +1,27 @@
 @use '../abstracts/variables' as v;
 
+.contact-form {
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+
+    input, textarea {
+        width: 100%;
+        font-family: inherit;
+        font-size: inherit;
+        border: 1px solid v.$blackberry;
+        border-radius: 2rem;
+        padding: 1rem 2rem;
+        margin-bottom: 2rem;
+        color: v.$blackberry;
+        &::placeholder {
+            color: v.$blackberry;
+        }
+
+    }
+
+
+}
+
 .main-footer {
     background-color: v.$blackberry;
     display: flex;
