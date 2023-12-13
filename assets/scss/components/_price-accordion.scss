@@ -68,11 +68,8 @@
                 td {
                     padding: 0.25rem 0.5rem;
                     border-bottom: 1px solid v.$white;
-                    text-align: center;
                     &:not(:nth-child(2)) {
                         @media screen and (max-width: 680px) {
-                            writing-mode: vertical-lr;
-                            text-align: right;
                         }
                     }
                 }
@@ -84,8 +81,6 @@
                 td {
                     &:not(:nth-child(2)) {
                         @media screen and (max-width: 680px) {
-                            writing-mode: vertical-lr;
-                            text-align: center;
                         }
                     }
                 }

@@ -74,8 +74,7 @@ html {
 
 img {
   max-width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .round {
@@ -164,10 +163,8 @@ Button, .btn {
 .services-block .container .col-left img {
   border-radius: 3rem;
   aspect-ratio: 10/5;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: top;
-     object-position: top;
+  object-fit: cover;
+  object-position: top;
 }
 @media screen and (max-width: 920px) {
   .services-block .container .col-left {
@@ -297,7 +294,7 @@ Button, .btn {
   text-decoration: underline;
 }
 .price-accordion table {
-  max-width: 100%;
+  width: 100%;
   border-spacing: 0;
   font-weight: 600;
   font-size: 0.8rem;
@@ -314,19 +311,6 @@ Button, .btn {
 .price-accordion table thead tr td {
   padding: 0.25rem 0.5rem;
   border-bottom: 1px solid #ffffff;
-  text-align: center;
-}
-@media screen and (max-width: 680px) {
-  .price-accordion table thead tr td:not(:nth-child(2)) {
-    writing-mode: vertical-lr;
-    text-align: right;
-  }
-}
-@media screen and (max-width: 680px) {
-  .price-accordion table tbody tr td:not(:nth-child(2)) {
-    writing-mode: vertical-lr;
-    text-align: center;
-  }
 }
 .price-accordion table tbody tr:nth-child(odd) {
   border: 1px solid #ffffff;
@@ -431,8 +415,7 @@ Button, .btn {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   row-gap: 4rem;
-  -moz-column-gap: 2rem;
-       column-gap: 2rem;
+  column-gap: 2rem;
 }
 @media screen and (max-width: 1280px) {
   .team-grid {
@@ -466,8 +449,7 @@ Button, .btn {
 .team-grid .team-member .headshot img {
   display: flex;
   aspect-ratio: 1/1;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   background-color: white;
   border-radius: 50%;
   border: 0.5rem solid #AED234;
@@ -607,9 +589,6 @@ Button, .btn {
   margin-bottom: 2rem;
   color: #363053;
 }
-.contact-form input::-moz-placeholder, .contact-form textarea::-moz-placeholder {
-  color: #363053;
-}
 .contact-form input::placeholder, .contact-form textarea::placeholder {
   color: #363053;
 }
@@ -746,10 +725,8 @@ Button, .btn {
     display: flex;
     width: 100%;
     position: relative;
-    -o-object-fit: cover;
-       object-fit: cover;
-    -o-object-position: center;
-       object-position: center;
+    object-fit: cover;
+    object-position: center;
     position: relative;
   }
 }
@@ -859,10 +836,8 @@ Button, .btn {
 .mvv .container-full .row:first-child img {
   max-width: 180px;
   aspect-ratio: 6/9;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  object-fit: cover;
+  object-position: center;
   margin-top: 1rem;
   margin-bottom: -1rem;
 }
@@ -877,10 +852,8 @@ Button, .btn {
 .mvv .container-full .row:last-child img {
   max-width: 180px;
   aspect-ratio: 6/9;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  object-fit: cover;
+  object-position: center;
   margin-top: -1rem;
   margin-bottom: 1rem;
 }
@@ -1099,8 +1072,7 @@ Button, .btn {
 }
 .standard-page-main .col-right img {
   aspect-ratio: 1;
-  -o-object-position: right;
-     object-position: right;
+  object-position: right;
   box-shadow: 2rem -2rem 0 #81298F;
   margin: 2rem 2rem 0 0;
   width: calc(100% - 2rem);
@@ -1145,4 +1117,4 @@ Button, .btn {
 }
 .block-title h2 {
   margin-bottom: 0;
-}/*# sourceMappingURL=main.css.map */
+}
