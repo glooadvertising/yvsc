@@ -40,7 +40,7 @@
     <div class="container-narrow">
         <div class="col-left">
             <h1><?php the_title();?></h1>
-            <?php the_excerpt(); ?>
+            <?php has_excerpt() ? the_excerpt() : null; ?>
         </div>
         <div class="col-right">
             <img src="<?php echo the_post_thumbnail_url( ); ?>" alt="" class="round">
