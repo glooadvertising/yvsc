@@ -75,7 +75,7 @@
             <?php foreach($services as $service) { ?>
             <div class="service-card">
                 <div class="service-icon">
-                    <img src="<?php echo get_template_directory_uri(  )?>/assets/images/icons/<?php echo $service['icon']; ?>.svg" alt="">
+                    <img src="<?php echo get_template_directory_uri(  )?>/assets/images/icons/<?php echo $service['icon']; ?>.png" alt="">
                 </div>
                 <div class="service-label">
                     <?php echo $service['name']; ?>
