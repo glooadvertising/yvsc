@@ -1,4 +1,9 @@
 @use '../abstracts/variables' as v;
+
+html {
+    scroll-behavior: smooth;
+}
+
 .container {
     all: inherit;
     width: v.$page_width;

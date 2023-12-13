@@ -44,6 +44,10 @@ a:active {
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   all: inherit;
   width: 1440px;
