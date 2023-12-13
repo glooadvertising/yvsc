@@ -255,6 +255,11 @@ Button, .btn {
     padding: 2rem 2rem;
   }
 }
+@media screen and (max-width: 580px) {
+  .price-accordion {
+    padding: 2rem 1rem;
+  }
+}
 .price-accordion summary {
   display: flex;
   align-items: center;
@@ -291,7 +296,7 @@ Button, .btn {
   text-decoration: underline;
 }
 .price-accordion table {
-  width: 100%;
+  max-width: 100%;
   border-spacing: 0;
   font-weight: 600;
   font-size: 0.8rem;

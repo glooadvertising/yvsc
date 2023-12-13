@@ -13,6 +13,9 @@
     @media screen and (max-width: 780px) {
         padding: 2rem 2rem;
     }
+    @media screen and (max-width: 580px) {
+        padding: 2rem 1rem;
+    }
 
 
     summary {
@@ -54,7 +57,7 @@
     }
 
     table {
-        width: 100%;
+        max-width: 100%;
         border-spacing: 0;
         font-weight: v.$bold;
         font-size: 0.8rem;
