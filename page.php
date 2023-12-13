@@ -185,7 +185,7 @@
                 ),
                 array(
                     'name' => 'Laura',
-                    'role' => 'Junionr support coordinator',
+                    'role' => 'Junior support coordinator',
                     'headshot' => 'laura'
                 ),
                 array(
