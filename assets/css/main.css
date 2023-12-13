@@ -509,6 +509,9 @@ Button, .btn {
   padding-top: 4rem;
   padding-bottom: 3rem;
 }
+.contact-form label {
+  display: none;
+}
 .contact-form input, .contact-form textarea {
   width: 100%;
   font-family: inherit;
