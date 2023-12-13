@@ -314,10 +314,18 @@ Button, .btn {
 .price-accordion table thead tr td {
   padding: 0.25rem 0.5rem;
   border-bottom: 1px solid #ffffff;
+  text-align: center;
 }
 @media screen and (max-width: 580px) {
-  .price-accordion table thead tr td {
-    overflow-x: scroll;
+  .price-accordion table thead tr td:not(:nth-child(2)) {
+    writing-mode: vertical-lr;
+    text-align: right;
+  }
+}
+@media screen and (max-width: 580px) {
+  .price-accordion table tbody tr td:not(:nth-child(2)) {
+    writing-mode: vertical-lr;
+    text-align: right;
   }
 }
 .price-accordion table tbody tr:nth-child(odd) {
