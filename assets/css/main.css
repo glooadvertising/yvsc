@@ -310,7 +310,7 @@ Button, .btn {
   text-decoration: underline;
 }
 .price-accordion table {
-  max-width: 100%;
+  width: 100%;
   overflow-x: scroll;
   border-spacing: 0;
   font-weight: 600;
