@@ -48,6 +48,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .container {
   all: inherit;
   width: 1440px;
@@ -108,6 +112,10 @@ img {
 
 .margin-top-thick {
   margin-top: 4rem;
+}
+
+.hidden-menu {
+  margin-left: -100%;
 }
 
 Button, .btn {
@@ -479,6 +487,78 @@ Button, .btn {
   font-size: 1.2rem;
 }
 
+.mobile-menu {
+  background-color: #81298F;
+  opacity: 0.9;
+  min-width: 50%;
+  color: #ffffff;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  height: 100%;
+  z-index: 1000;
+  padding: 6rem 3rem;
+  position: fixed;
+  transition: 0.3s ease-out all;
+}
+.mobile-menu .menu {
+  list-style-type: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+  min-width: 200px;
+  max-width: 100%;
+}
+.mobile-menu .menu li a {
+  display: flex;
+  padding-bottom: 1.5rem;
+  padding-right: 3rem;
+  border-bottom: 1px dotted #ffffff;
+  margin-bottom: 1.5rem;
+  transition: 0.3s ease-out all;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+.mobile-menu .menu li a:hover {
+  padding-left: 0.5rem;
+  color: #FF8515;
+}
+.mobile-menu .menu li:last-child a {
+  border: none;
+}
+@media screen and (max-width: 980px) {
+  .mobile-menu {
+    display: flex;
+  }
+}
+@media screen and (max-width: 580px) {
+  .mobile-menu {
+    width: 80%;
+  }
+}
+.mobile-menu .ndis {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-self: flex-end;
+  gap: 0.5rem;
+  color: #ffffff;
+}
+.mobile-menu .ndis p {
+  margin-bottom: 0;
+  max-width: 12ch;
+  font-weight: 500;
+  font-size: 0.8rem;
+  line-height: 1.1;
+}
+.mobile-menu .ndis img {
+  max-width: 90px;
+  border-radius: 100%;
+}
+
 .main-header {
   display: flex;
   flex-direction: row;
@@ -494,9 +574,9 @@ Button, .btn {
   justify-content: space-between;
   gap: 2rem;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1280px) {
   .main-header .container .nav-wrapper {
-    gap: 1rem;
+    gap: 0.5rem;
   }
 }
 .main-header .container .nav-wrapper .menu-main-menu-container ul {
@@ -513,7 +593,7 @@ Button, .btn {
 .main-header .container .nav-wrapper .menu-main-menu-container ul li a {
   padding: 1rem;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1280px) {
   .main-header .container .nav-wrapper .menu-main-menu-container ul li a {
     padding: 1rem 0.5rem;
   }
@@ -581,6 +661,11 @@ Button, .btn {
   font-weight: 500;
   font-size: 0.8rem;
   line-height: 1.1;
+}
+@media screen and (max-width: 1280px) {
+  .main-header .container .nav-wrapper .ndis p {
+    display: none;
+  }
 }
 .main-header .container .nav-wrapper .ndis img {
   max-width: 70px;

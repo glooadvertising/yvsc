@@ -1,0 +1,69 @@
+@use "../abstracts/variables" as v;
+
+.mobile-menu {
+    background-color: v.$purple;
+    opacity: 0.9;
+    min-width: 50%;
+    color: v.$white;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    height: 100%;
+    z-index: 1000;
+    padding: 6rem 3rem;
+    position: fixed;
+    transition: v.$trans_one;
+    .menu {
+        list-style-type: none;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        padding-inline-start: 0;
+        min-width: 200px;
+        max-width: 100%;
+        li a {
+            display: flex;
+            padding-bottom: 1.5rem;
+            padding-right: 3rem;
+            border-bottom: 1px dotted v.$white;
+            margin-bottom: 1.5rem;
+            transition: v.$trans_one;
+            font-weight: bold;
+            font-size: 1.6rem;
+            &:hover {
+                padding-left: 0.5rem;
+                color: v.$orange;
+            }
+        }
+        li:last-child a {
+            border: none;
+        }
+    }
+    @media screen and (max-width: 980px) {
+        display: flex;
+    }
+    @media screen and (max-width: 580px) {
+        width: 80%;
+    }
+    .ndis {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        justify-self: flex-end;
+        gap: 0.5rem;
+        color: v.$white;
+        p {
+            margin-bottom: 0;
+            max-width: 12ch;
+            font-weight: v.$semi_bold;
+            font-size: 0.8rem;
+            line-height: 1.1;
+        }
+        img {
+            max-width: 90px;
+            border-radius: 100%;
+        }
+    }
+}

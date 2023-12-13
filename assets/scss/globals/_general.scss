@@ -1,7 +1,11 @@
-@use '../abstracts/variables' as v;
+@use "../abstracts/variables" as v;
 
 html {
     scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 .container {
@@ -56,10 +60,12 @@ img {
     @media screen and (max-width: 580px) {
         padding-inline: 2rem;
     }
-
-
 }
 
 .margin-top-thick {
     margin-top: 4rem;
+}
+
+.hidden-menu {
+    margin-left: -100%;
 }

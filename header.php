@@ -7,6 +7,7 @@
     <?php wp_head();?>
 </head>
 <body>
+    <?php get_template_part( 'partials/mobile-menu' ); ?>
     <header class="main-header">
         <div class="container">
             <a href="<?php echo site_url(); ?>" class="main-logo">
