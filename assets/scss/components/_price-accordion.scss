@@ -90,7 +90,7 @@
                     &:not(:nth-child(2)) {
                         @media screen and (max-width: 580px) {
                             writing-mode:vertical-lr;
-                            text-align: right;
+                            text-align: center;
                         }
                     }
 
