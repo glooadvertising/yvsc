@@ -258,7 +258,7 @@ Button, .btn {
 @media screen and (max-width: 580px) {
   .price-accordion {
     padding: 2rem 1rem;
-    overflow-x: scroll;
+    border-radius: 2rem;
   }
 }
 .price-accordion summary {
