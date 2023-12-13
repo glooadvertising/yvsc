@@ -125,7 +125,8 @@
             $args = array(
                 'post_parent' => $post->ID,
                 'post_type' => 'page',
-                'orderby' => 'menu_order'
+                'orderby' => 'menu_order',
+                'order' => 'ASC'
             );
 
             $child_query = new WP_Query( $args );
