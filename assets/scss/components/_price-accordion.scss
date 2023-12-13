@@ -74,7 +74,7 @@
                     border-bottom: 1px solid v.$white;
                     text-align: center;
                     &:not(:nth-child(2)) {
-                        @media screen and (max-width: 580px) {
+                        @media screen and (max-width: 680px) {
                             writing-mode:vertical-lr;
                             text-align: right;
                         }
@@ -88,7 +88,7 @@
             tr {
                 td {
                     &:not(:nth-child(2)) {
-                        @media screen and (max-width: 580px) {
+                        @media screen and (max-width: 680px) {
                             writing-mode:vertical-lr;
                             text-align: center;
                         }

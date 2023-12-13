@@ -316,13 +316,13 @@ Button, .btn {
   border-bottom: 1px solid #ffffff;
   text-align: center;
 }
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 680px) {
   .price-accordion table thead tr td:not(:nth-child(2)) {
     writing-mode: vertical-lr;
     text-align: right;
   }
 }
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 680px) {
   .price-accordion table tbody tr td:not(:nth-child(2)) {
     writing-mode: vertical-lr;
     text-align: center;
