@@ -8,6 +8,12 @@
     padding-top: 2rem;
     padding-bottom: 2rem;
     .container {
+        .main-logo {
+            img {
+                width: auto;
+                height: 70px;
+            }
+        }
         .nav-wrapper {
             display: flex;
             flex-direction: row;

@@ -11,7 +11,7 @@
     <header class="main-header">
         <div class="container">
             <a href="<?php echo site_url(); ?>" class="main-logo">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="Yarra Valley Support Coordination Logo">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.svg" alt="Yarra Valley Support Coordination Logo">
             </a>
             <span class="nav-wrapper">
                 <?php wp_nav_menu(array('menu' => 'Main Menu')); ?>
