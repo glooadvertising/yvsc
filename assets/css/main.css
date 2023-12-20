@@ -751,6 +751,9 @@ Button, .btn {
 .main-footer .container .top-row .col-right {
   min-width: 20%;
 }
+.main-footer .container .top-row .col-right .contact-method {
+  margin-bottom: 2rem;
+}
 @media screen and (max-width: 980px) {
   .main-footer .container .top-row .col-right {
     min-width: 50%;

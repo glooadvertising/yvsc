@@ -58,6 +58,9 @@
             }
             .col-right {
                 min-width: 20%;
+                .contact-method {
+                    margin-bottom: 2rem;
+                }
                 @media screen and (max-width: 980px) {
                     min-width: 50%;
                 }
