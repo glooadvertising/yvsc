@@ -937,6 +937,9 @@ Button, .btn {
   width: 30%;
   padding: 3rem;
 }
+.mvv .container-full .row .centered-content h2 {
+  font-size: 2rem;
+}
 @media screen and (max-width: 1280px) {
   .mvv .container-full .row .centered-content {
     width: 50%;
