@@ -383,13 +383,13 @@ Button, .btn {
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
   margin-bottom: 4rem;
 }
 @media screen and (max-width: 1280px) {
   .services-grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 @media screen and (max-width: 980px) {
@@ -398,6 +398,11 @@ Button, .btn {
   }
 }
 @media screen and (max-width: 720px) {
+  .services-grid {
+    gap: 1.5rem;
+  }
+}
+@media screen and (max-width: 620px) {
   .services-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1227,6 +1232,9 @@ Button, .btn {
 .testimonials-section .testimonial-grid .testimonial-card {
   background-color: #ffffff;
   padding: 3rem;
+}
+.testimonials-section .testimonial-grid .testimonial-card p:before, .testimonials-section .testimonial-grid .testimonial-card p::after {
+  content: '"';
 }
 
 .block-title {

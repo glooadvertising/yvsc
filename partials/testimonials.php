@@ -8,7 +8,7 @@
             <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
             
                 <div class="testimonial-card round">
-                    <?php the_content( ); ?>
+                    <i><?php the_content( ); ?></i>
                     <strong>
                         <?php the_title(); ?><br>
                         <?php the_date('F, Y'); ?>

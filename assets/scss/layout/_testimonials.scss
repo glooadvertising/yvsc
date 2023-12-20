@@ -18,6 +18,11 @@
         .testimonial-card {
             background-color: v.$white;
             padding: 3rem;
+            p {
+                &:before, &::after {
+                    content: '"';
+                }
+            }
         }
     }
 }

@@ -14,14 +14,14 @@
                     </a>
                     <div class="contact-method">
                         <h3><?php bloginfo( 'title' ); ?></h3>
-                        <p>Specialist Support Coordination<br> Registered NDIS Provider.Provider No: 4050110593</p>
+                        <p>Specialist Support Coordination<br><br> Registered NDIS Provider.Provider No: 4050110593</p>
                     </div>
                 </div>
                 <div class="col-right">
                     <div class="contact-method">
                         <h3>Location</h3>
                         <a href="https://www.google.com/maps/search/Suite+3,+5+Church+Street+Healesville+VIC+3777+2F+John+St,+Lilydale+3140/@-37.7059082,145.2634998,11z/data=!3m1!4b1?entry=ttu" target="_blank" rel="noopener noreferrer" >
-                            <p>Suite 3, 5 Church Street Healesville VIC 3777<br> 2F John St, Lilydale 3140</p>
+                            <p>Suite 3, 5 Church Street Healesville VIC 3777<br><br> 2F John St, Lilydale 3140</p>
                         </a>
                     </div>
                     <div class="contact-method">
