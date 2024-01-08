@@ -826,12 +826,11 @@ Button, .btn {
   justify-content: flex-end;
   position: relative;
   padding-top: 4rem;
-  padding-bottom: 4rem;
   color: #ffffff;
   width: 100%;
   overflow: hidden;
   background-repeat: no-repeat;
-  background-position: center 25%;
+  background-position: center top;
   background-size: cover;
 }
 @media screen and (max-width: 980px) {
@@ -859,6 +858,7 @@ Button, .btn {
 .home-hero .container {
   background-image: none;
   height: 70vh;
+  width: 100%;
 }
 .home-hero .container .white-trans-block {
   display: flex;
@@ -866,11 +866,12 @@ Button, .btn {
   justify-content: center;
   background-color: #ffffff;
   opacity: 0.9;
-  padding: 3rem;
-  font-size: 1.5rem;
-  max-width: 50%;
+  padding: 5rem 2rem;
+  font-size: 2rem;
+  width: 100%;
   text-align: center;
-  margin: auto auto 0 auto;
+  margin: 0;
+  position: absolute;
 }
 .home-hero .container .white-trans-block p {
   color: #363053;
@@ -880,6 +881,7 @@ Button, .btn {
 @media screen and (max-width: 980px) {
   .home-hero .container .white-trans-block {
     max-width: 100%;
+    font-size: 1.5rem;
   }
 }
 @media screen and (max-width: 980px) {

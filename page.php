@@ -203,10 +203,15 @@
                     'role' => 'Support worker',
                     'headshot' => 'andrea'
                 ),
+                // array(
+                //     'name' => 'Erin',
+                //     'role' => 'Junior support',
+                //     'headshot' => 'erin'
+                // ),
                 array(
-                    'name' => 'Erin',
-                    'role' => 'Junior support',
-                    'headshot' => 'erin'
+                    'name' => 'Rebecca',
+                    'role' => 'Junior support coodinator',
+                    'headshot' => 'rebecca'
                 ),
                 array(
                     'name' => 'Marlee',

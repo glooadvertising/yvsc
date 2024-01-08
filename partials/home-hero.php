@@ -2,7 +2,7 @@
     
     <div class="container">
         <?php the_post_thumbnail( ); ?>
-        <div class="white-trans-block round">
+        <div class="white-trans-block">
             <?php the_content(); ?>
         </div>
     </div>
