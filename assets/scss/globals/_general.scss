@@ -69,3 +69,29 @@ img {
 .hidden-menu {
     margin-left: -100%;
 }
+
+.step-nav {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    .ff-btn.ff-btn-prev.ff-btn-secondary, .ff-btn.ff-btn-next.ff-btn-secondary {
+        background-color: unset;
+        font-size: unset;
+        display: flex;
+        flex-direction: row;
+        font-weight: v.$regular;
+        align-items: center;
+        text-transform: lowercase;
+        line-height: 1;
+        max-height: 3rem;
+        color: inherit;
+        border: 2px solid;
+        border-radius: 3rem;
+        padding: 1rem 3rem;
+        gap: 2rem;
+        transition: v.$trans_one;
+    }
+    
+}

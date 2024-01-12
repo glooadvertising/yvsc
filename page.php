@@ -83,6 +83,13 @@
             </div>
             <?php } ?>
         </div>
+
+        <details class="price-accordion round">
+            <summary>Web referral form <span>View</span><span>Hide</span></summary>
+            <br><br>
+            <?php echo do_shortcode( '[fluentform id="5"]' ); ?>
+        </details>
+        <br>
         <?php the_content(); ?>
         <?php $query = new WP_Query( 'post_type=block&category_name=service-block-2&posts_per_page=1' ); ?>
         <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
