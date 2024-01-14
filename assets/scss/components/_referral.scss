@@ -1,0 +1,31 @@
+@use '../abstracts/variables' as v;
+
+.fluentform .ff-step-titles li.ff_active:before, .fluentform .ff-step-titles li.ff_completed:before {
+    background-color: v.$purple !important;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 30px;
+    line-height: 30px;
+}
+.fluentform .ff-step-titles li:before {
+    font-size: 1rem !important;
+    border-radius: 50% !important;
+    width: 30px !important;
+    line-height: 30px !important;
+
+}
+
+.fluentform .ff-step-titles li.ff_active:after {
+    background: v.$purple !important;
+}
+
+.fluentform .ff-step-titles li:after {
+    top: 14px !important;
+}
+
+.ff-default .ff-btn-secondary:not(.ff_btn_no_style):focus, .ff-default .ff-btn-secondary:not(.ff_btn_no_style):hover {
+    background-color: v.$purple !important;
+    border-color: v.$purple !important;
+    color: #fff;
+}
