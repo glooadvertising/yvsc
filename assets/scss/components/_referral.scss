@@ -16,7 +16,7 @@
 
 }
 
-.fluentform .ff-step-titles li.ff_active:after {
+.fluentform .ff-step-titles li.ff_active:after, .fluentform .ff-step-titles li.ff_completed:after {
     background: v.$purple !important;
 }
 
