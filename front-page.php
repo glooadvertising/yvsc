@@ -47,7 +47,9 @@
             <img src="<?php echo site_url(); ?>/wp-content/uploads/2023/11/stock-photo-portrait-of-happy-women-with-disability-on-spring-lawn-375512857.jpg" alt="Mission" class="round">
             <div class="centered-content values round">
                 <h2>Values</h2>
-                <p>To work with and alongside people to support them to fulfil their goals to enjoy their life. We are driven with a person-centred passion to contribute and make a difference in issues that matter to the community, both individually and collectively.</p>
+                <p><strong>Passion:</strong> We are driven by passion to contribute and make a difference in issues that matter to the community, both individually and to the broader community.
+
+</p>
             </div>
             <div class="grey-block-right round"></div>
         </div>

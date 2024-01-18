@@ -83,11 +83,11 @@
             </div>
             <?php } ?>
         </div>
-
+        <span id="referral-form"></span>
         <details class="price-accordion round">
             <summary>Web referral form <span>View</span><span>Hide</span></summary>
             <br><br>
-            <?php echo do_shortcode( '[fluentform id="5"]' ); ?>
+            <?php echo do_shortcode( '[fluentform id="4"]' ); ?>
         </details>
         <br>
         <?php the_content(); ?>
@@ -261,7 +261,8 @@
             $args = array(
                 'post_parent' => $post->ID,
                 'post_type' => 'page',
-                'orderby' => 'menu_order'
+                'orderby' => 'menu_order',
+                'order' => 'ASC'
             );
 
             $child_query = new WP_Query( $args );

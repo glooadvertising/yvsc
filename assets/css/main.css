@@ -344,6 +344,12 @@ Button, .btn {
 }
 .price-accordion a {
   text-decoration: underline;
+  color: #81298F;
+  font-weight: 400;
+  transition: 0.3s ease-out all;
+}
+.price-accordion a:hover {
+  text-decoration: none;
 }
 .price-accordion table {
   width: 100%;
@@ -533,7 +539,7 @@ Button, .btn {
   justify-content: space-between;
   position: absolute;
   height: 100%;
-  z-index: 1000;
+  z-index: 2000;
   padding: 6rem 3rem;
   position: fixed;
   transition: 0.3s ease-out all;
@@ -563,7 +569,7 @@ Button, .btn {
 .mobile-menu .menu li:last-child a {
   border: none;
 }
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1200px) {
   .mobile-menu {
     display: flex;
   }
@@ -631,6 +637,21 @@ Button, .btn {
   justify-content: space-between;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  position: absolute;
+  z-index: 1000;
+  background-color: #ffffff;
+  transition: 0.3s ease-out all;
+  opacity: 75%;
+  width: 100%;
+  height: calc(70px + 4rem);
+}
+.main-header:hover {
+  opacity: 1;
+}
+.main-header .container {
+  width: 100%;
+  background-color: transparent;
+  opacity: 1;
 }
 .main-header .container .main-logo img {
   width: auto;
@@ -641,11 +662,12 @@ Button, .btn {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  gap: 2rem;
+  gap: 1rem;
+  font-weight: 400;
 }
 @media screen and (max-width: 1280px) {
   .main-header .container .nav-wrapper {
-    gap: 0.5rem;
+    gap: 2rem;
   }
 }
 .main-header .container .nav-wrapper .menu-main-menu-container ul {
@@ -667,15 +689,29 @@ Button, .btn {
     padding: 1rem 0.5rem;
   }
 }
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1200px) {
   .main-header .container .nav-wrapper .menu-main-menu-container {
+    display: none;
+  }
+}
+.main-header .container .nav-wrapper .btn-refer {
+  color: #81298F;
+  text-transform: capitalize;
+}
+.main-header .container .nav-wrapper .btn-refer:hover {
+  background-color: #81298F;
+  color: #ffffff;
+  border-color: #81298F;
+}
+@media screen and (max-width: 640px) {
+  .main-header .container .nav-wrapper .btn-refer {
     display: none;
   }
 }
 .main-header .container .nav-wrapper .burger {
   display: none;
 }
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1200px) {
   .main-header .container .nav-wrapper .burger {
     display: flex;
     flex-direction: column;
@@ -731,7 +767,7 @@ Button, .btn {
   font-size: 0.8rem;
   line-height: 1.1;
 }
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1380px) {
   .main-header .container .nav-wrapper .ndis p {
     display: none;
   }
@@ -739,7 +775,7 @@ Button, .btn {
 .main-header .container .nav-wrapper .ndis img {
   max-width: 70px;
 }
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1200px) {
   .main-header .container .nav-wrapper .ndis {
     display: none;
   }
@@ -902,6 +938,7 @@ Button, .btn {
   .home-hero img {
     display: flex;
     width: 100%;
+    height: 100%;
     position: relative;
     -o-object-fit: cover;
        object-fit: cover;
@@ -912,7 +949,7 @@ Button, .btn {
 }
 .home-hero .container {
   background-image: none;
-  height: 70vh;
+  height: 90vh;
   width: 100%;
 }
 .home-hero .container .white-trans-block {
@@ -927,11 +964,16 @@ Button, .btn {
   text-align: center;
   margin: 0;
   position: absolute;
+  transition: 0.3s ease-out all;
+}
+.home-hero .container .white-trans-block:hover {
+  opacity: 1;
 }
 .home-hero .container .white-trans-block p {
   color: #363053;
   opacity: 1;
   margin-bottom: 0;
+  font-weight: 400;
 }
 @media screen and (max-width: 980px) {
   .home-hero .container .white-trans-block {
@@ -993,7 +1035,7 @@ Button, .btn {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   width: 30%;
   padding: 3rem;
 }
@@ -1073,6 +1115,14 @@ Button, .btn {
 .values {
   background-color: #81298F;
   color: #ffffff;
+}
+.values p {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+.hide {
+  opacity: 0 !important;
 }
 
 .page-hero {

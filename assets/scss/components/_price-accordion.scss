@@ -66,6 +66,12 @@
     }
     a {
         text-decoration: underline;
+        color: v.$purple;
+        font-weight: 400;
+        transition: v.$trans_one;
+        &:hover {
+            text-decoration: none;
+        }
     }
 
     table {
