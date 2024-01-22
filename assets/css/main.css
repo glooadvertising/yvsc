@@ -639,6 +639,7 @@ Button, .btn {
   padding-top: 2rem;
   padding-bottom: 2rem;
   position: absolute;
+  top: 0;
   z-index: 1000;
   background-color: #ffffff;
   transition: 0.3s ease-out all;
@@ -1133,6 +1134,7 @@ Button, .btn {
   justify-content: center;
   position: relative;
   min-height: 300px;
+  margin-top: 134px;
 }
 @media screen and (max-width: 980px) {
   .page-hero {
