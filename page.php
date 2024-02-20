@@ -196,9 +196,9 @@
                     'headshot' => 'laura'
                 ),
                 array(
-                    'name' => 'Tracy',
-                    'role' => 'Home maintenance',
-                    'headshot' => 'tracy'
+                    'name' => 'Rebecca',
+                    'role' => 'Junior support coodinator',
+                    'headshot' => 'rebecca'
                 ),
                 array(
                     'name' => 'Hans',
@@ -216,9 +216,9 @@
                 //     'headshot' => 'erin'
                 // ),
                 array(
-                    'name' => 'Rebecca',
-                    'role' => 'Junior support coodinator',
-                    'headshot' => 'rebecca'
+                    'name' => 'Tracy',
+                    'role' => 'Home maintenance',
+                    'headshot' => 'tracy'
                 ),
                 array(
                     'name' => 'Marlee',
