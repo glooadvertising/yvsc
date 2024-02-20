@@ -202,7 +202,7 @@
                 ),
                 array(
                     'name' => 'Hans',
-                    'role' => 'Home maintenance',
+                    'role' => 'Support Worker',
                     'headshot' => 'hans'
                 ),
                 array(
