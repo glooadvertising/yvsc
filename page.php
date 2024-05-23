@@ -281,5 +281,14 @@
     </section>
     <?php } ?>
 
-<?php get_footer()?>
+<!-- CONTACT US -->
 
+<?php if(is_page('contact-us')){?>
+<section class="dir-col <?php echo basename(get_permalink()); ?>">
+    <div class="container-narrow">
+        <?php the_content();?>
+    </div>
+</section>
+<?php } ?>
+
+<?php get_footer();?>
