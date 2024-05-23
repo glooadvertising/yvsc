@@ -287,6 +287,7 @@
 <section class="dir-col <?php echo basename(get_permalink()); ?>">
     <div class="container-narrow">
         <?php the_content();?>
+        <?php echo do_shortcode( '[fluentform id="5"]' ); ?>
     </div>
 </section>
 <?php } ?>
