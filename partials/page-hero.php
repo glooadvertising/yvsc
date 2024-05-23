@@ -122,7 +122,7 @@
 </section>
 <?php } ?>
 
-<?php if(is_page('contact-us')) { ?>
+<?php if(is_page('contact-us') or is_page('refer')) { ?>
 
 
 <section class="page-hero resources-page">
