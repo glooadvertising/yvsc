@@ -210,6 +210,16 @@
                     'role' => 'Support worker',
                     'headshot' => 'andrea'
                 ),
+                array(
+                    'name' => 'Luke',
+                    'role' => 'Support worker',
+                    'headshot' => 'luke'
+                ),
+                array(
+                    'name' => 'Molly',
+                    'role' => 'Support worker',
+                    'headshot' => 'molly'
+                ),
                 // array(
                 //     'name' => 'Erin',
                 //     'role' => 'Junior support',
