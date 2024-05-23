@@ -15,7 +15,7 @@
             </a>
             <span class="nav-wrapper">
                 <?php wp_nav_menu(array('menu' => 'Main Menu')); ?>
-                <a href="<?php echo get_site_url(); ?>/services/#referral-form" class="btn btn-refer">Refer</a>
+                <a href="<?php echo site_url('refer'); ?>" class="btn btn-refer">Refer</a>
                 <div id="menu-button" class="burger">
                     <div class="patty"></div>
                     <div class="patty"></div>
