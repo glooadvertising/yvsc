@@ -281,9 +281,9 @@
     </section>
     <?php } ?>
 
-<!-- CONTACT US -->
+<!-- CONTACT US | REFER -->
 
-<?php if(is_page('contact-us')){?>
+<?php if(is_page('contact-us') or is_page('refer')){?>
 <section class="dir-col <?php echo basename(get_permalink()); ?>">
     <div class="container-narrow">
         <?php the_content();?>
