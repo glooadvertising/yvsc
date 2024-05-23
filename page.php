@@ -83,12 +83,12 @@
             </div>
             <?php } ?>
         </div>
-        <span id="referral-form"></span>
+        <!-- <span id="referral-form"></span>
         <details class="price-accordion round">
             <summary>Web referral form <span>View</span><span>Hide</span></summary>
             <br><br>
             <?php echo do_shortcode( '[fluentform id="4"]' ); ?>
-        </details>
+        </details> -->
         <br>
         <?php the_content(); ?>
         <?php $query = new WP_Query( 'post_type=block&category_name=service-block-2&posts_per_page=1' ); ?>
