@@ -1,10 +1,10 @@
     <?php wp_footer();?>
-    <section id="contact-us" class="contact-form">
+    <!-- <section id="contact-us" class="contact-form">
         <div class="container">
             <h2>Contact us</h2>
             <?php echo do_shortcode( '[contact-form-7 id="9916b04" title="Contact form"]' ); ?>
         </div>
-    </section>
+    </section> -->
     <footer class="main-footer">
         <div class="container">
             <div class="top-row">
