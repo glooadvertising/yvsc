@@ -226,11 +226,6 @@
                 //     'headshot' => 'erin'
                 // ),
                 array(
-                    'name' => 'Tracy',
-                    'role' => 'Home maintenance',
-                    'headshot' => 'tracy'
-                ),
-                array(
                     'name' => 'Marlee',
                     'role' => 'Support worker',
                     'headshot' => 'marlee'
@@ -239,6 +234,11 @@
                     'name' => 'Peter',
                     'role' => 'Support worker',
                     'headshot' => 'peter'
+                ),
+                array(
+                    'name' => 'Tracy',
+                    'role' => 'Home maintenance',
+                    'headshot' => 'tracy'
                 ),
 
             )?>
