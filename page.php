@@ -201,9 +201,9 @@
                     'headshot' => 'rebecca'
                 ),
                 array(
-                    'name' => 'Hans',
+                    'name' => 'Hayden',
                     'role' => 'Support Worker',
-                    'headshot' => 'hans'
+                    'headshot' => 'hayden'
                 ),
                 array(
                     'name' => 'Andrea',
